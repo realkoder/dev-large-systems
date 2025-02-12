@@ -1,7 +1,7 @@
 # Notes DLS
 
 
-### Git cloned projects
+### Related projects from Course / pesekt1
 
 `Microservices-scaling` -> https://github.com/pesekt1/microservices-scaling
 `RabbitMQ-Microservices` -> https://github.com/pesekt1/RabbitMQ-Microservices
