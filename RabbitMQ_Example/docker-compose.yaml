@@ -1,0 +1,43 @@
+services:
+
+  frontend-app:
+    restart: always
+
+    build:
+      context: ./frontend-app
+      dockerfile: Dockerfile.dev
+
+    volumes:
+      - ./frontend-app:/app
+      - /app/node_modules
+
+    ports:
+      - 5173:5173
+
+  product-service:
+    restart: always
+
+    build:
+      context: ./product-service
+      target: develop
+      dockerfile: Dockerfile.dev
+
+    volumes:
+      - ./product-service:/app
+
+    ports:
+      - 8080:8080
+  
+  user-service:
+    restart: always
+
+    build:
+      context: ./user-service
+      target: develop
+      dockerfile: Dockerfile.dev
+
+    volumes:
+      - ./user-service:/app
+
+    ports:
+    - 9090:9090
