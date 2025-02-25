@@ -16,5 +16,8 @@
 
 # Misc
 
+CQRS - Command Query Responsibility Segregation
+![CQRS](assets/cqrs.png "CQRS")
+
 #### HTTP STATUS CODES 
 ![Http status codes](/assets/http_code_status.png)
